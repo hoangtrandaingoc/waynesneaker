@@ -18,10 +18,8 @@ body {
     .searchbar{
     margin-bottom: auto;
     margin-top: auto;
-    height: 60px;
     background-color: #eceff6;
     border-radius: 30px;
-    padding: 10px;
     }
 
     .search_input{
@@ -49,8 +47,6 @@ body {
     }
 
     .search_icon{
-    height: 30px;
-    width: 30px;
     float: right;
     display: flex;
     justify-content: center;
@@ -58,10 +54,15 @@ body {
     border-radius: 50%;
     color:white;
     }
-    
+    @media (max-width: 768px) {
+        .searchbar{
+            display: none;
+        }
+    }
+
 /*Định dạng title*/
 .top_nav_left a{
-	    height: 50px;
+	height: 50px;
     line-height: 50px;
     font-size: 13px;
     color: #b5aec4;
